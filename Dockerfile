@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-ENV INTELLIJ_VERSION 14.1.2
+ENV INTELLIJ_VERSION 14.1.3
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl openjdk-7-jdk && \
