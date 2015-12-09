@@ -11,8 +11,9 @@ RUN apt-get update && \
     chown -R intellij:intellij /home/intellij && \
     cd /home/intellij && \
     tar xvzf ideaIC-${INTELLIJ_VERSION}.tar.gz && \
-    rm -f ideaIC-${INTELLIJ_VERSION}.tar.gz
+    rm -f ideaIC-${INTELLIJ_VERSION}.tar.gz && \
+    mv /home/intellij/idea* /home/intellij/idea
 
 USER intellij
 
-ENTRYPOINT [ "/home/intellij/idea-IC-139.1117.1/bin/idea.sh" ]
+ENTRYPOINT [ "/home/intellij/idea/bin/idea.sh" ]
