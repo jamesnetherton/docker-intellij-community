@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV INTELLIJ_VERSION 15.0
+ENV INTELLIJ_VERSION 15.0.2
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl openjdk-7-jdk && \
