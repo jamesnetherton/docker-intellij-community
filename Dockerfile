@@ -1,9 +1,9 @@
-FROM debian:jessie
+FROM ubuntu:xenial
 
-ENV INTELLIJ_VERSION 15.0.4
+ENV INTELLIJ_VERSION 2016.1.1
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends curl openjdk-7-jdk && \
+    apt-get install -y --no-install-recommends curl openjdk-8-jdk && \
     apt-get clean all && \
     mkdir /home/intellij && \
     useradd intellij -d /home/intellij && \
