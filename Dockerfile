@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-ENV INTELLIJ_VERSION 2016.2.5
+ENV INTELLIJ_VERSION 2016.3
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl openjdk-8-jdk && \
