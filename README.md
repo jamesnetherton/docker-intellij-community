@@ -1,6 +1,6 @@
 # docker-intellij-community
 
-[IntelliJ](https://www.jetbrains.com/idea/) community edition running on Docker from a Debian Wheezy base image with Open JDK 7.
+[IntelliJ](https://www.jetbrains.com/idea/) community edition running on Docker.
 
 ## Building the image
 
